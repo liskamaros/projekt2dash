@@ -188,6 +188,9 @@ main section {
 .main-panel {
   color: #7f8c8d;
 }
+.main-panel .panel-footer {
+  background-color: white;
+}
 .main-panel a {
   color: #7f8c8d;
 }
@@ -445,25 +448,6 @@ main section {
 .dropdown .btn {
   position: relative;
 }
-.alert-placeholder {
-  position: fixed;
-  bottom: 0;
-  max-width: 100%;
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .alert-placeholder {
-    width: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-.alert-placeholder .alert {
-  margin: 10px;
-  box-shadow: 0 0 7px;
-}
 [class*='myicon-']:before {
   position: relative;
   bottom: -0.12em;
@@ -483,7 +467,7 @@ main section {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: -10px;
+  bottom: -9.5px;
   background-color: #16a085;
 }
 .progress-vertical .progress-bar:before {
@@ -496,4 +480,17 @@ main section {
   text-align: center;
   font-size: 0.85em;
   margin-bottom: .2em;
+}
+.experience {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  padding-bottom: 45px;
+}
+.experience .prvy {
+  padding-bottom: 3px;
+}
+.experience img {
+  background-color: white;
+  width: 100%;
 }

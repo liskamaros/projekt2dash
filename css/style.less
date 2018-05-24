@@ -126,6 +126,9 @@ main {
 }
 
 .main-panel {
+    .panel-footer {
+        background-color: white;
+    }
     color: @text;
     a {
         color: @text;
@@ -415,21 +418,7 @@ main {
     }
 }
 
-.alert-placeholder {
-    position: fixed;
-    bottom: 0;
-    max-width: 100%;
-    width: 100%;
-    @media @xs {
-        width: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .alert {
-        margin: 10px;
-        box-shadow: 0 0 7px;
-    }
-}
+
 
 //icons fix
 [class*='myicon-']:before {
@@ -453,7 +442,7 @@ main {
             display: block;
             width: 100%;
             position: absolute;
-            bottom: -10px;
+            bottom: -9.5px;
             background-color: @green;
             &:before {
                 content: attr(aria-valuenow) "%";
@@ -467,5 +456,22 @@ main {
                 margin-bottom: .2em;
             }
         }
+    }
+}
+
+.experience {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    padding-bottom: 45px;
+    .prvy {
+        padding-bottom: 3px;
+    }
+
+    img {
+        background-color: white;
+        width: 100%;
+
+
     }
 }
